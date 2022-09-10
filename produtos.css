@@ -1,0 +1,104 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header{
+    background: linear-gradient(#FFFF, #8888);
+    padding: 20px 0; /* o '"0" depois do px indica que o padding righ e left é 0 */
+}
+.caixa{
+    position: relative;
+    width: 100%;
+    margin: 0 auto; /* auto faz com que o HTML calcule automaticamente a margem */
+    background: linear-gradient(#FFFF, #8888, 80%, 90);
+    border: none;
+}
+nav{
+    position: absolute;  /* com essa tag conseguimos ajustar o elemento dentro de qualquer ponto da página */
+    top: 110px;
+    right: 0px;
+}
+nav li { /* aqui estritamente se aplica aos itens de lista Li dentro do NAV */
+    display: inline;
+    margin-left: 15px;
+}
+nav a { /* aqui estritamente se aplica aos links */
+    text-transform: uppercase; /* text-transform muda o texto conforme o comando; upper case é o CAIXA ALTA */
+    color:black;
+    font-weight: bold ;/* altera o peso da fonte */
+    font-size: 22px;
+    text-decoration: none; /* retira as decorações do texto, ou seja, o sublinhado do hipertext link */
+}
+/* a tag hover deve ser usada ":hover" após o item que deve ser impactado, sem espaços */
+nav a:hover { /* indica que todos os links dentro da tag nav vão ficar em destaque com os comandos a seguir */
+    color: #FFA500;
+    text-decoration: underline; /* inclui o sublinhado */
+}
+.produtos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li { /* só aplica para os produtos dentro dos itens LI da lista UL da page produtos */
+    display: inline-block; /* itens ocupam o exato espaço que precisam e, por isso, ficam um do lado do outro */
+    text-align: center;
+    vertical-align: top; /* alinhar pela linha de cima */
+    width: 30%;
+    border: solid 2px #BBBB ;/* Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin.*/
+    border-radius: 10px 20px 30px 40px; /* arredondamento indidivualizado para cada canto */
+    border-top-width: 30px; 
+    margin: 0 1.5px; /* descola os elementos visuais "Cabelo, Barba e C+B" um do outro */
+    padding: 30px 20px; /* adicionando o paddding dá efeito nos elementos pois o navegador soma px com % ajusar com box-sizing */
+    box-sizing: border-box; /* coloca o espaçamento interno do padding dentro do espaçamento absoluto do margin*/
+}
+.produtos li:hover{ /* aplicando destaque nas caixas com os 3 produtos da barbearia */
+    border-color: #FFA500;
+    text: #FFA500;
+}
+.produtos li:hover h2 {/* altera o H2 quando ativar o hover dentro do LI do PRODUTOS */
+    font-size: 30px;
+}
+.produtos li:active{ /* active detecta a posição do mouse sob o objeto */
+    border-color: #FFA500;
+}
+.produtos h2{
+    text-transform: uppercase;
+    font-size: 23px;
+    font-weight: bold;
+}
+.produto-descricao{
+    font-size: 16px;
+}
+.produto-preco{
+    font-size: 23px;
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+}
+footer{
+    text-align: center;
+    
+    background: url("bg.jpg"); /* inserindo imagem no rodapé em vez de apenas cor */
+    padding: 40px 0px;/* 40 para cima e para baixo e 0 para os lados */
+}
+.Copyright{
+    font-size: 13px;
+    color: #FFFF;
+    margin-top: 2.5px;
+}
+/* ajustrando o CSS3 ao tamanho de qualquer tela. Para isso é preciso fazer pesquisa: */
+@media screen and (max-width:480px){
+    .caixa, .principal, .conteudo-beneficios,.video, .mapa, {
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+}
+

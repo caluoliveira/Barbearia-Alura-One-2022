@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css"> <!-- Precisamos usar o RESET para que o estilo criado pelo DEV não seja influenciado pelo estilo que o navegador adiciona automaticamente. A "reset sempre vem antes de outras chamadas de CSS-->
+    <link rel="stylesheet" href="contato.css"><!-- chama o CSS3 configurado pelo User-->
+</head>
+<body>
+    <header> <!-- cabeçalho -->
+    <div class="caixa">
+        <h1><img src="logo.png" alt="logotipo da Barbearia Alura contendo a silhueta de um homem com barba e cabelo a fazer"</h1> <!-- insere logo --> <!-- alt= acessibilidade -->
+        <nav>
+            <ul> <!-- insere lista não ordenada -->
+                <!-- tag <a href 'a' vem de ancoragem e serve para indicar o destino a que um link deve nos levar (e href/hipertexto de referência) --> 
+                <li><a href="index.html">Home</a></li> <!-- tag li= lista de itens dentro do UL -->
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+        </nav> 
+        </ul>
+    </div>
+    </header>
+    <main> <!-- conteúdo principal do site -->
+        <form>
+            <label for="nomecompleto">Insira seu nome completo: </label>
+            <input type="text" id="nomecompleto" class="input-padrao" required placeholder="Insira seu nome"> <!-- required torna o item obrigatório para envio -->
+
+            <label for="email">Insira seu email: </label> <!-- A tag <label> é uma etiqueta para a entrada de dados, para o <input>. -->
+            <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+            <label for="phone">Insira seu telefone: </label>
+            <input type="tel" id="phone" class="input-padrao" required placeholder="(XX) 99999-9999">
+            
+            <label for="mensagem">Deixe sua mensagem:</label>
+            <textarea cols="30" rows="10" id="mensagem" class="input-padrao"></textarea>
+        <fieldset>
+            <legend>Como prefere ser contatado?</legend>
+            <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email" >E-mail</label>
+             <!-- name="contato" coloca todos os inputs em um mesmo grupo e, assim, quando se clica em um se desclica no outro -->
+            <label for="radio-phone"><input type="radio" name="contato" value="phone" id="radio-phone">Telefone</label>
+            <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label> <!-- checkec deixa o item previamente marcado como "verdadeiro" -->
+           <legend>Qual horário gostaria de ser atendido? </legend>
+            <select>
+                    <option>Manhã</option>
+                    <option>Tarde</option>
+                    <option>Noite</option>
+            </select>
+        </fieldset>
+        </form>  
+        <table> <!--  Criando tabela -->
+            <!-- thead = cabeçalho da tabela -->
+            <!-- tbody = corpo da tabela -->
+            <!-- tfoot = rodapé da tabela -->
+            <!-- colspan=X mesclar células -->
+            <thead>
+                <tr><!-- tr = table row = linha --> 
+                    <td>Dia da Semana</td> <!-- td = table data = coluna -->  <!-- célula --> <!-- cabeçalho -->
+                    <td>Horário Disponível</td> <!-- cabeçalho -->
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Segunda-Feira</td> 
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Terça-Feira</td> 
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quarta-Feira</td> 
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Quinta-Feira</td> 
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sexta-Feira</td> 
+                    <td>8h - 20h</td>
+                </tr>
+                <tr>
+                    <td>Sábado</td> 
+                    <td>8h - 20h</td>
+                </tr>     
+            </tbody>        
+        </table> 
+        <div>
+            <label class="checkbox"><input type="checkbox" checked>Gostaria de receber nossas novidades?</input></label>
+            <center>
+             <input class="enviar" type="submit" value="Enviar"> <!-- Botão enviar dados; "value" atribui o texto que aparece ao Usuário -->
+            </center>
+         </div> 
+    </main>    
+    <footer>
+      <img src="logo-branco.png" alt="logotipo da Barbearia Alura contendo a silhueta de um homem com barba e cabelo a fazer"">
+      <p class="Copyright"> Copyright &copy; Alura e Oracle | Programa ONE- Oracle Next Education</p>
+    </footer>
+</body>
+</html>

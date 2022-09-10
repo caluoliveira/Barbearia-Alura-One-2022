@@ -1,0 +1,194 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+header{
+    background: linear-gradient(#FFFF, #8888);
+    padding: 20px 0; /* o '"0" depois do px indica que o padding righ e left é 0 */
+}
+.caixa{
+    position: relative;
+    width: 100%;
+    margin: 0 auto; /* auto faz com que o HTML calcule automaticamente a margem */
+    background: linear-gradient(#FFFF, #8888, 80%, 90);
+    border: none;
+}
+nav{
+    position: absolute;  /* com essa tag conseguimos ajustar o elemento dentro de qualquer ponto da página */
+    top: 110px;
+    right: 0px;
+}
+nav li { /* aqui estritamente se aplica aos itens de lista Li dentro do NAV */
+    display: inline;
+    margin-left: 15px;
+}
+nav a { /* aqui estritamente se aplica aos links */
+    text-transform: uppercase; /* text-transform muda o texto conforme o comando; upper case é o CAIXA ALTA */
+    color:black;
+    font-weight: bold ;/* altera o peso da fonte */
+    font-size: 22px;
+    text-decoration: none; /* retira as decorações do texto, ou seja, o sublinhado do hipertext link */
+}
+/* a tag hover deve ser usada ":hover" após o item que deve ser impactado, sem espaços */
+nav a:hover { /* indica que todos os links dentro da tag nav vão ficar em destaque com os comandos a seguir */
+    color: #FFA500;
+    text-decoration: underline; /* inclui o sublinhado */
+}
+.banner{
+    width: 100%; /* largura */
+}
+.principal-title{
+    font-size: 40px;
+    margin-left: 20px;
+}
+.titulo-principal
+{
+    text-align: center;
+    font-size: 40px; /*'em' aumenta a medida proporcionamente ao comando do usuário em2 = dobro*/
+    margin: 0;
+    margin-bottom: 1em;
+    clear: left;
+    /*text-shadow: 2px 2px 2px black; insere sombra em texto*/
+}
+/*
+.titulo-principal:first-letter/* first-letter ou first-line aplica apenas na primeira letra ou linh 
+{
+
+    font-weight: bold; 
+}
+
+.titulo-principal:before{
+    content:"["
+}
+.titulo-principal:after{
+    content:"]"
+
+Apenas para entender a pseudo-classe before e after do CSS3
+*/
+#missao{
+    font-size:20px;
+}
+ul{
+    display:inline; /* faz a lista de itens ocupar só o espaço dela; definido pelo user */
+    vertical-align: top; /* O que isso faz?  */
+    width: 40%; /* largura */
+    margin-right: 15px; /* margem direira */
+    padding: 20px;
+}
+.principal
+{
+    padding: 3em 0; 
+    background-color: #FFFF;
+    width: 940px;
+    margin: auto;
+}
+.principal p
+{
+    margin: 1em;
+}
+.principal strong {
+    color: red;
+    font-weight: bold;
+}
+.principal em {
+    font-style: italic;
+}
+.utensilios{
+    width: 140px;
+    float: left;  /*Com a propriedade float definida, um elemento pode ser empurrado para esquerda ou para a direita, permitindo que os outros elementos possam organizar em torno dele.  */ 
+    /* depois de usar o float tem que usar o clear no elemento posterior, no caso, o titulo principal */
+    margin: 20px;
+    margin-bottom: 20px;
+}
+.beneficios{
+    padding: 3em 0;
+    background-color: #FFFF;
+}
+.conteudo-beneficios{
+    width: 640px;
+    margin: 0 auto;
+}
+.lista-beneficios{
+    width: 40%;
+    display: inline-table;
+    vertical-align: top;
+}
+.imagem-beneficios{
+    width: 40%;
+    box-shadow: 10px 10px 5px 2.5px black; /* eixo x, y, cor, blur, tamanho da sombra (transição de sóliso pra transparente) insere sombra sobre o objeto */
+}
+.itens{
+    line-height: 1.5;
+    font-style: normal;
+}
+.itens:first-child{
+    font-weight: bold;
+}
+.itens:before{
+    content:"✅";
+}
+.video{
+    width: 560px;
+    margin: 2em auto;
+}
+
+.produtos{
+    width: 100%;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos li { /* só aplica para os produtos dentro dos itens LI da lista UL da page produtos */
+    display: inline-block; /* itens ocupam o exato espaço que precisam e, por isso, ficam um do lado do outro */
+    text-align: center;
+    vertical-align: top; /* alinhar pela linha de cima */
+    width: 30%;
+    border: solid 2px #BBBB ;/* Na estrutura de "caixas" do CSS, a borda fica posicionada entre o padding e a margin.*/
+    border-radius: 10px 20px 30px 40px; /* arredondamento indidivualizado para cada canto */
+    border-top-width: 30px; 
+    margin: 0 1.5px; /* descola os elementos visuais "Cabelo, Barba e C+B" um do outro */
+    padding: 30px 20px; /* adicionando o paddding dá efeito nos elementos pois o navegador soma px com % ajusar com box-sizing */
+    box-sizing: border-box; /* coloca o espaçamento interno do padding dentro do espaçamento absoluto do margin*/
+}
+.mapa{
+    padding: 3em;
+    width: 93.9%;
+    margin: auto;
+    background: linear-gradient(#FFFF, #8888);  /* aplicando cor em gradiente */
+}
+.mapa p{
+    text-align: center;
+    margin-bottom: 2em;
+}
+.general-infos{
+    text-align: justify;
+    font-size: 16px; /*'em' aumenta a medida proporcionamente ao comando do usuário em2 = dobro*/
+    margin: 10px;
+    padding: 10px;
+    margin-bottom: 1em;
+    clear: left;  
+}
+footer{
+    width: 100%;
+    text-align: center;
+    background: url("bg.jpg"); /* inserindo imagem no rodapé em vez de apenas cor */
+    padding: 40px 0px;/* 40 para cima e para baixo e 0 para os lados */
+}
+.Copyright{
+    width: auto;
+    font-size: 13px;
+    color: white;
+    margin-top: 2.5px;
+}
+/* ajustrando o CSS3 ao tamanho de qualquer tela. Para isso é preciso fazer pesquisa: */
+@media screen and (max-width:480px){
+.caixa, .principal, .conteudo-beneficios,.video, .mapa{
+        width: auto;
+    }
+h1{
+        text-align: center;
+    }
+nav{
+        position: static;
+    }
+.lista-beneficios, .imagem-beneficios{
+    width: 100%;
+    }

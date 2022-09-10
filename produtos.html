@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos - Barbearia Alura</title>
+    <link rel="stylesheet" href="reset.css"> <!-- Precisamos usar o RESET para que o estilo criado pelo DEV não seja influenciado pelo estilo que o navegador adiciona automaticamente. A "reset sempre vem antes de outras chamadas de CSS-->
+    <link rel="stylesheet" href="produtos.css"><!-- chama o CSS3 configurado pelo User-->
+</head>
+<body>
+    <header> <!-- cabeçalho -->
+    <div class="caixa">
+        <h1><img src="logo.png"</h1> <!-- insere logo -->
+        <nav>
+            <ul> <!-- insere lista não ordenada -->
+                <!-- tag <a href 'a' vem de ancoragem e serve para indicar o destino a que um link deve nos levar (e href/hipertexto de referência) --> 
+                <li><a href="index.html">Home</a></li> <!-- tag li= lista de itens dentro do UL -->
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+        </nav> 
+        </ul>
+    </div>
+    </header>
+    <main> <!-- conteúdo principal do site -->
+    <center>
+     <ul class="produtos">
+        <li>
+           <h2>Cabelo</h2> 
+           <img src="cabelo.jpg">
+           <p class="produto-descricao">Conforme sua preferência: ná máquina e/ou tesoura!</p>
+           <p class="produto-preco">R$ 35,00</p>
+        </li> 
+        <li>
+            <h2>Barba</h2>
+            <img src="barba.jpg">
+            <p class="produto-descricao">Corte, alinhamento e desenhos profissionais!</p>
+           <p class="produto-preco">R$ 25,00</p>
+        </li> 
+        <li>
+            <h2>Barba + Cabelo</h2>
+            <img src="cabelo+barba.jpg">
+            <p class="produto-descricao">Full Combo: o melhor tratamento para seu cabelo e barba!</p>
+           <p class="produto-preco">R$ 50,00</p>  
+        </li> 
+    </ul>  
+    </center>
+    </main>
+    <footer>
+        <img src="logo-branco.png">
+        <p class="Copyright"> Copyright &copy; Alura e Oracle | Programa ONE- Oracle Next Education</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+main{
+    width: 100%;
+    margin: 0 auto;
+}
+header{
+    background: linear-gradient(#FFFF, #8888);
+    padding: 20px 0; /* o '"0" depois do px indica que o padding righ e left é 0 */
+}
+form{
+    margin: 40px;
+}
+form label, form legend{
+    display: block; 
+    font-size: 20px;
+    margin: 10px;  
+    text-align: left;
+}
+.input-padrao{
+    display: block;
+    margin: 20px;
+    padding: 10px 20px;
+    width: 50%;
+    border-radius: 5px;
+    margin: 10px;
+}
+legend{
+    text-align: center;
+    font-weight: bold;
+    padding: 5px;
+    margin-top: 20px;
+}
+.checkbox{
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.enviar{
+   width: 40%; 
+   padding: 15px;
+   background-color: #32CD32;
+   color: white;
+   border: none;
+   border-radius: 10px;
+   font-weight: bold;
+   font-size: 18px;
+   transition: 1s all; /* programa transição visual do elemento em segundos; abaixo estamos alterando a cor do background com o hover */
+   margin: 30px;
+}
+.enviar:hover{
+    color:white;
+    background-color:#228B22;
+    transform: rotate(10deg) scale(1.11); /* rotate: dá efeito visual de rotação*/ /* scale: aumenta em 20% o item */
+    /* Utilizamos a propriedade transform: scale() para aumentar um elemento proporcionalmente. */
+}
+select{
+   margin-left: 20px;
+   width: 23%; 
+   padding: 5px;
+   border: solid 1px #CCCC;
+   border-radius: 5px;
+   font-size: 18px;
+   background: linear-gradient(#FFFF, #8888);
+}
+table{
+    margin: 20px;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+thead{
+    background-color: #5555;
+    color: white;
+    font-weight: bold;
+}
+td, th{
+    border: solid 1px black;
+    color: black;
+    text-align: center;
+    padding: 10px;
+}
+nav{
+    position: absolute;  /* com essa tag conseguimos ajustar o elemento dentro de qualquer ponto da página */
+    top: 110px;
+    right: 0px;
+}
+nav li { /* aqui estritamente se aplica aos itens de lista Li dentro do NAV */
+    display: inline;
+    margin-left: 15px;
+}
+nav a { /* aqui estritamente se aplica aos links */
+    text-transform: uppercase; /* text-transform muda o texto conforme o comando; upper case é o CAIXA ALTA */
+    color:black;
+    font-weight: bold ;/* altera o peso da fonte */
+    font-size: 22px;
+    text-decoration: none; /* retira as decorações do texto, ou seja, o sublinhado do hipertext link */
+}
+/* a tag hover deve ser usada ":hover" após o item que deve ser impactado, sem espaços */
+nav a:hover { /* indica que todos os links dentro da tag nav vão ficar em destaque com os comandos a seguir */
+    color: #FFA500;
+    text-decoration: underline; /* inclui o sublinhado */
+}
+footer{
+    text-align: center;
+    background: url("bg.jpg"); /* inserindo imagem no rodapé em vez de apenas cor */
+    padding: 40px 0px;/* 40 para cima e para baixo e 0 para os lados */
+}
+.Copyright{
+    font-size: 13px;
+    color: #FFFF;
+    margin-top: 2.5px;
+}
+/* ajustrando o CSS3 ao tamanho de qualquer tela. Para isso é preciso fazer pesquisa: */
+@media screen and (max-width:480px){
+    .caixa, .principal, .conteudo-beneficios,.video, .mapa{
+        width: auto;
+    }
+    h1{
+        text-align: center;
+    }
+    nav{
+        position: static;
+    }
+    .lista-beneficios, .imagem-beneficios{
+        width: 100%;
+    }
+
+}
+

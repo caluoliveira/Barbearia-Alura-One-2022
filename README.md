@@ -19,3 +19,4 @@ Me sinto muito mais preparado e desafiado do que quando comecei a estruturar o "
 Noções básicas de HTML.
 
 ## Link do repositório do GitHub:
+https://github.com/caluoliveira/Barbearia-Alura-One-2022
